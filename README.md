@@ -1,31 +1,66 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste Front-end Econverse - Tony Gomes.
 
-### Vem ser #Econverse!
+O projeto foi criado utilizando React, Vite e TypeScript. Segue as instruções para configurar e executar o app:
 
-Segue abaixo as instruções para a execução do teste.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+## Pré-requisitos
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+* [Node.js](https://nodejs.org/) (versão 16 ou superior)
+* [npm](https://www.npmjs.com/)
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+## Instalação
 
-**Boa sorte! ;)**
+1. Clone o repositório:
+
+   ```bash
+    https://github.com/tonnyyyy/teste-front-end-econverse.git
+   ```
+2. Acesse a pasta do projeto:
+
+   ```bash
+   cd caminho/do/repositorio
+   ```
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+
+## Scripts para executar
+
+* **Iniciar o servidor de desenvolvimento**
+
+  ```bash
+  npm run dev
+  ```
+
+  Executa o app em modo de desenvolvimento, por padrão em [http://localhost:5173](http://localhost:5173). 
+
+* **Construir para produção**
+
+  ```bash
+  npm run build
+  ```
+
+  Gera o build otimizado do app na pasta `dist`. (para executar em produçãpo)
+
+
+## Arquitetura do projeto
+
+```text
+├── public/            # Arquivos estáticos
+├── src/               # Código-fonte
+│   ├── assets/        # Imagens, fontes etc.
+│   ├── components/    # Componentes React
+│   ├── types/         # Tipagens globais
+│   ├── styles/        # Arquivos CSS/SASS
+│   ├── App.tsx        # Componente principal
+│   └── main.tsx       # Entrada do app
+├── vite.config.ts     # Configuração do Vite
+├── tsconfig.json      # Configuração do TypeScript
+└── package.json       # Dependências e scripts
+```
+
+---
