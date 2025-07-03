@@ -1,0 +1,119 @@
+.vitrine {
+  text-align: center;
+  padding: 0 1rem;
+
+  h2 {
+    line-height: 100%;
+    color: var(--highlight-color);
+    font-size: 2.5rem;
+  }
+
+  .tabs {
+    margin-bottom: 1rem;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      list-style: none;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--gray-border);
+        transition: border-color 0.3s;
+
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--black);
+
+        &.activeTab {
+          color: var(--highlight-color);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .produtos {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .swiper {
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.cardProduto {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  text-align: left;
+
+  max-width: 280px;
+  min-width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .productImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: grey;
+    margin-bottom: 1.25rem;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1rem;
+
+    .oldPrice {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 1.3rem;
+    }
+
+    .currentPrice {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: var(--black);
+    }
+  }
+
+  .freeShipping {
+    color: var(--highlight-color);
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    height: 44px;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #4338ca;
+    }
+  }
+}

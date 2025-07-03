@@ -1,0 +1,59 @@
+.hero-banner {
+  position: relative;
+  background-image: url("../../assets/banner-img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+    padding-left: 81px;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      width: 822px;
+      line-height: 50px;
+    }
+
+    h2 {
+      color: white;
+      font-weight: 400;
+      font-size: 2.6rem;
+
+      span {
+        font-size: 2.6rem;
+        color: var(--primary-color);
+      }
+    }
+
+    .cta-button {
+      background-color: var(--primary-color);
+      color: black;
+      padding: 7px 49px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 1.25rem;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+    }
+
+    .neon-sign {
+      font-size: 3rem;
+      text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+    }
+  }
+}

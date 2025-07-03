@@ -1,0 +1,35 @@
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1rem 139px;
+
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .category-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+
+    width: 128px;
+    height: 128px;
+
+    img {
+      width: 100%;
+      padding: 1rem;
+      object-fit: cover;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

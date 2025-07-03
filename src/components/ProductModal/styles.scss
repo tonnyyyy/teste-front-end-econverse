@@ -1,0 +1,45 @@
+.product-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .close-button {
+    color: var(--black);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.75rem;
+    border-radius: 8px;
+    padding: 0 1rem;
+  }
+
+  .product-modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 3rem;
+
+    .product-modal-name {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .product-modal-description {
+      font-size: 1.25rem;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+
+    .product-modal-price {
+      font-size: 2rem;
+      color: var(--highlight-color);
+      margin: 0;
+    }
+  }
+}

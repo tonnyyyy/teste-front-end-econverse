@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #ffcc00;
+  --background-color: #f8f8f8;
+  --highlight-color: #3019b2;
+  --black: #3f3f40;
+  --violet: #271c47;
+  --gray-border: #bdbdbd;
+}
+
+html {
+  font-size: 12px;
+
+  body {
+    font-family: "Poppins", sans-serif;
+
+    button {
+      border: none;
+      font-family: "Poppins", sans-serif;
+      cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .global-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
